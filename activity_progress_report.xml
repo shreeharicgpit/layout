@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ddf7ff"
+    tools:context="com.example.mahadev.umbrellaorganization.ProgressReport">
+
+    <ProgressBar
+
+        android:id="@+id/circularProgressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="1050dp"
+        android:layout_height="1050dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="294dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="50"
+        android:progressDrawable="@drawable/circular"
+        android:secondaryProgress="100" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_above="@+id/absentTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="125dp"
+        android:background="@drawable/whitecircle" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:layout_above="@+id/absentTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="77dp"
+        android:gravity="center"
+        android:text="25%"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/absentTextView"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="286dp"
+        android:text="Absent shown here"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

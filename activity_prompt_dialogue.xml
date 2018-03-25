@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ddf7ff"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/otpTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="ENTER OTP "
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/emailOtpEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/otpTextView"
+        android:layout_marginTop="25dp">
+
+        <requestFocus />
+
+    </EditText>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/verifyCardView"
+        android:layout_width="210dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/emailOtpEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        app:cardBackgroundColor="#000d4d"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp">
+
+        <Button
+            android:id="@+id/verifyBtn"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:onClick="getVerified"
+            android:text="   Verify"
+            android:textColor="@android:color/white" />
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>
